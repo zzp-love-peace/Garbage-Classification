@@ -1,0 +1,3 @@
+rootProject.name = "Rubbish"
+include ':app'
+include ':app', ':bottomdrawer'
