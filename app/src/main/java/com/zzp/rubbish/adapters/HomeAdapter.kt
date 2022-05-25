@@ -10,12 +10,12 @@ import com.zzp.rubbish.R
 class HomeAdapter : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val imageView: ImageView = view.findViewById(R.id.image_view)
+        val imageView: ImageView = view.findViewById(R.id.article_image)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.home_item, parent, false)
+            .inflate(R.layout.item_home, parent, false)
         return ViewHolder(view)
     }
 

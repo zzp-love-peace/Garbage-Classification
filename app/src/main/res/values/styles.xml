@@ -41,4 +41,21 @@
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">#ff25adff</item>
     </style>
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:alpha">0.8</item>
+        <item name="boxBackgroundColor">@color/gray</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="counterEnabled">true</item>
+        <item name="counterTextColor">@color/white</item>
+        <item name="errorEnabled">true</item>
+        <item name="hintEnabled">false</item>
+        <item name="hintTextColor">@color/white</item>
+    </style>
 </resources>

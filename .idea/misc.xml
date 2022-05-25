@@ -6,7 +6,61 @@
         <entry key="..\:/Android/AndroidStudioProjects/Rubbish/app/src/main/res/layout/activity_login.xml" value="0.2318840579710145" />
         <entry key="..\:/Android/AndroidStudioProjects/Rubbish/app/src/main/res/layout/activity_login_by_pwd.xml" value="0.2318840579710145" />
         <entry key="..\:/Android/AndroidStudioProjects/Rubbish/app/src/main/res/layout/fragment_mine.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable-anydpi/ic_about_us.xml" value="0.156" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable-anydpi/ic_mine_info.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_alarm.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_back.xml" value="0.156" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_calendar.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_camera.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_camera2.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_message.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_mine.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_mine2.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_place.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_place2.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_qq.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_quiz.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_right.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_rubbish.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_search.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_setting.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_store.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_store2.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_track.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_up.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_wallet.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_weibo.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/ic_weixin.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/text_underline.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/today_background.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/view_syllabus_active_mark_background.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/view_syllabus_mark_background.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/drawable/view_syllabus_unactive_mark_background.xml" value="0.151" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_article.xml" value="0.2441123188405797" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_community.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_login.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_login_by_code.xml" value="0.2441123188405797" />
         <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_login_by_pwd.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_main.xml" value="0.2441123188405797" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_question.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_register.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/activity_setting.xml" value="0.2441123188405797" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/article_item.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/fragment_discern.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/fragment_home.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/fragment_mine.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/fragment_store.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/guide_item0.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/guide_item1.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/guide_item2.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/item_article_horizontal.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/item_article_vertical.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/item_commodity.xml" value="0.2441123188405797" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/item_goods.xml" value="0.2441123188405797" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/item_home.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/layout/item_task.xml" value="0.2318840579710145" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/menu/mine_nav_menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitHub/Garbage-Classification/app/src/main/res/menu/setting_nav_menu.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>

@@ -3,7 +3,6 @@ package com.zzp.rubbish.fragments
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,10 +20,8 @@ import com.zzp.rubbish.activities.CommunityActivity
 import com.zzp.rubbish.activities.MainActivity
 import com.zzp.rubbish.adapters.HomeAdapter
 import com.zzp.rubbish.saveData
-import com.zzp.rubbish.util.UserInfo
-import org.w3c.dom.Text
+import com.zzp.rubbish.data.UserInfo
 import java.util.*
-import kotlin.math.log
 
 class HomeFragment : Fragment() {
     companion object {

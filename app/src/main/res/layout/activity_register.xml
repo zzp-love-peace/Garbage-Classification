@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.LoginByCodeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,53 +17,26 @@
             android:id="@+id/appCompatTextView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_register_by_phone"
+            android:text="@string/register_account"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.07999998" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/appCompatTextView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string1"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16000003" />
+            app:layout_constraintVertical_bias="0.08" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phone_number_layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/phoneNumLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:alpha="0.8"
-            app:boxBackgroundColor="@color/gray"
-            app:boxCornerRadiusBottomEnd="20dp"
-            app:boxCornerRadiusBottomStart="20dp"
-            app:boxCornerRadiusTopEnd="20dp"
-            app:boxCornerRadiusTopStart="20dp"
-            app:boxStrokeColor="@color/white"
-            app:counterEnabled="true"
+            style="@style/MyTextInputLayout"
             app:counterMaxLength="11"
-            app:counterTextColor="@color/white"
-            app:errorEnabled="true"
-            app:hintEnabled="false"
-            app:hintTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintVertical_bias="0.2"
             app:passwordToggleEnabled="false"
             app:placeholderTextColor="@color/white"
             app:prefixText="+86"
@@ -85,34 +58,20 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/code_layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/codeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:alpha="0.8"
-            app:helperText="点击右侧图标获取验证码"
-            app:helperTextTextColor="@color/white"
-            app:boxBackgroundColor="@color/gray"
-            app:boxCornerRadiusBottomEnd="20dp"
-            app:boxCornerRadiusBottomStart="20dp"
-            app:boxCornerRadiusTopEnd="20dp"
-            app:boxCornerRadiusTopStart="20dp"
-            app:boxStrokeColor="@color/white"
-            app:counterEnabled="true"
+            style="@style/MyTextInputLayout"
             app:counterMaxLength="4"
-            app:counterTextColor="@color/white"
             app:endIconDrawable="@drawable/ic_send"
             app:endIconMode="custom"
-            app:errorEnabled="true"
-            app:hintEnabled="false"
-            app:hintTextColor="@color/white"
+            app:helperText="点击右侧图标获取验证码"
+            app:helperTextTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintVertical_bias="0.35"
             app:passwordToggleEnabled="false"
             app:placeholderTextColor="@color/white"
             app:prefixTextColor="@color/white"
@@ -131,8 +90,65 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pwdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyTextInputLayout"
+            app:counterMaxLength="12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true"
+            app:placeholderTextColor="@color/white"
+            app:prefixTextColor="@color/white"
+            app:startIconDrawable="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/input_pwd"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pwdAgainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyTextInputLayout"
+            app:counterMaxLength="12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"
+            app:passwordToggleEnabled="true"
+            app:placeholderTextColor="@color/white"
+            app:prefixTextColor="@color/white"
+            app:startIconDrawable="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/input_pwd_again"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/login_button"
+            android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -140,7 +156,7 @@
             android:alpha="0.8"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:text="@string/login"
+            android:text="@string/register"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:backgroundTint="@color/gray"
@@ -149,24 +165,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.60"
+            app:layout_constraintVertical_bias="0.80"
             app:strokeColor="#7D7D7D"
             app:strokeWidth="1dp" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/appCompatTextView6"
+            android:id="@+id/loginText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/string2"
+            android:text="@string/back_to_login"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold"
+            android:background="@drawable/text_underline"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.95" />
-
+            app:layout_constraintVertical_bias="0.90" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

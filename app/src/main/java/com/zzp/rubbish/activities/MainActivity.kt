@@ -13,6 +13,7 @@ import com.kongzue.dialog.v2.DialogSettings
 import com.zzp.rubbish.*
 import com.zzp.rubbish.interfaces.UpdateCityListener
 import com.zzp.rubbish.fragments.*
+import com.zzp.rubbish.util.ActivityCollector
 
 class MainActivity : AppCompatActivity(), UpdateCityListener{
     companion object {
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity(), UpdateCityListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        ActivityCollector.addActivity(this)
         DialogSettings.type = DialogSettings.TYPE_IOS
         initData()
         transparencyBar(this)
@@ -46,8 +48,10 @@ class MainActivity : AppCompatActivity(), UpdateCityListener{
                     fragmentMap.forEach { (i, fragment) ->
                         if (i == position) {
                             transaction.show(fragment)
-                            if (fragment is MineFragment) fragment.refreshData()
-                        } else {
+//                            transaction.replace(R.id.host_fragment, fragment)
+//                            if (fragment is MineFragment) fragment.refreshData()
+                        }
+                        else {
                             transaction.hide(fragment)
                         }
                     }
@@ -121,6 +125,7 @@ class MainActivity : AppCompatActivity(), UpdateCityListener{
 
     override fun onDestroy() {
         super.onDestroy()
+        ActivityCollector.removeActivity(this)
         saveData()
     }
 

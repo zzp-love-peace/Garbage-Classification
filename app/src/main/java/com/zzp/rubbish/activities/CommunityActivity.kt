@@ -2,27 +2,28 @@ package com.zzp.rubbish.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kongzue.dialog.v2.WaitDialog
 import com.zzp.rubbish.R
 import com.zzp.rubbish.adapters.ArticleAdapter
 import com.zzp.rubbish.checkWindow
 import com.zzp.rubbish.data.Article
+import com.zzp.rubbish.data.Policy
+import com.zzp.rubbish.data.UserInfo
+import com.zzp.rubbish.network.NetWork
+import com.zzp.rubbish.showToast
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import java.lang.Exception
 
 class CommunityActivity : AppCompatActivity() {
 
     private lateinit var toolbar: Toolbar
     private lateinit var articleRecycler: RecyclerView
-
-    private var articleAdapter: ArticleAdapter? = null
-    private val articleList =
-        arrayListOf(Article(R.drawable.article_bg0, "长沙垃圾分类知识科普。", "靖哥哥营销", "24k"),
-            Article(R.drawable.article_bg1, "关于垃圾分类，习总书记这样说。", "吴堆堆", "12k"),
-            Article(R.drawable.article_bg2, "文明你我他，为什么要进行垃圾分类？", "代成龙", "8k"),
-            Article(R.drawable.article_bg3, "垃圾分类优秀小区，看看他们是怎样分类的。", "靖哥哥营销", "6k"))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,10 +41,11 @@ class CommunityActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        articleAdapter = ArticleAdapter(articleList)
         val layoutManager = LinearLayoutManager(this)
         articleRecycler.layoutManager = layoutManager
-        articleRecycler.adapter = articleAdapter
+        CoroutineScope(Dispatchers.IO).launch {
+            getPolicy(UserInfo.token)
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -53,5 +55,40 @@ class CommunityActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private suspend fun getPolicy(token: String) {
+        try {
+            val response = NetWork.getPolicy(token)
+            CoroutineScope(Dispatchers.Main).launch {
+                if (response.code == 0) {
+                    articleRecycler.adapter = ArticleAdapter(
+                        this@CommunityActivity,
+                        policy2Article(response.data.policies)
+                    )
+                } else {
+                    response.msg.showToast()
+                }
+            }
+        } catch (e: Exception) {
+            Log.e("TAG", "getPolicy: ", e)
+        }
+    }
+
+    private fun policy2Article(policies: List<Policy>): List<Article> {
+        val articles = ArrayList<Article>()
+        for (policy in policies) {
+            articles.add(
+                Article(
+                    policy.image,
+                    policy.title,
+                    policy.author,
+                    policy.content,
+                    policy.createDate,
+                    Article.TYPE_V
+                )
+            )
+        }
+        return articles
     }
 }

@@ -17,7 +17,7 @@
             android:id="@+id/appCompatTextView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_by_pwd"
+            android:text="@string/login_by_phone"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -27,12 +27,12 @@
             app:layout_constraintVertical_bias="0.12" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/login_by_code_text"
+            android:id="@+id/login_by_pwd_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/login_by_phone"
+            android:text="@string/login_by_pwd"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -84,17 +84,22 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pwd_layout"
+            android:id="@+id/code_layout"
             style="@style/MyTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:counterMaxLength="12"
+            app:counterMaxLength="4"
+            app:endIconDrawable="@drawable/ic_send"
+            app:endIconMode="custom"
+            app:errorEnabled="true"
+            app:helperText="点击右侧图标获取验证码"
+            app:helperTextTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.50"
-            app:passwordToggleEnabled="true"
+            app:passwordToggleEnabled="false"
             app:placeholderTextColor="@color/white"
             app:prefixTextColor="@color/white"
             app:startIconDrawable="@android:color/transparent">
@@ -102,8 +107,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:hint="@string/input_pwd"
+                android:hint="@string/input_code"
                 android:inputType="number"
                 android:maxLines="1"
                 android:textColor="@color/white"

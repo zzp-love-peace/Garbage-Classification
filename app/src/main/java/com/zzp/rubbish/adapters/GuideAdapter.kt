@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
-import com.zzp.rubbish.activities.LoginActivity
+import com.zzp.rubbish.activities.LoginByCodeActivity
 import com.zzp.rubbish.R
 import java.lang.IllegalArgumentException
 
@@ -35,7 +35,7 @@ class GuideAdapter(private val activity: Activity) : RecyclerView.Adapter<Recycl
                 .inflate(R.layout.guide_item2, parent, false)
             val viewHolder = ViewHolder2(view)
             viewHolder.startButton.setOnClickListener {
-                val intent = Intent(activity, LoginActivity::class.java)
+                val intent = Intent(activity, LoginByCodeActivity::class.java)
                 activity.startActivity(intent)
                 activity.finish()
             }

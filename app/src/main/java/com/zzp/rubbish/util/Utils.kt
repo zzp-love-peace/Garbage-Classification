@@ -6,15 +6,13 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.Matrix
 import android.os.Build
-import android.util.Log
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputLayout
-import com.zzp.rubbish.activities.MainActivity
 import com.zzp.rubbish.util.MyApplication
-import com.zzp.rubbish.util.UserInfo
+import com.zzp.rubbish.data.UserInfo
 import java.io.ByteArrayOutputStream
 
 fun String.showToast() { Toast.makeText(MyApplication.context, this, Toast.LENGTH_SHORT).show() }

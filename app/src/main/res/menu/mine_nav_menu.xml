@@ -11,24 +11,18 @@
     <group
         android:id="@+id/group4">
         <item
-            android:id="@+id/my_track"
-            android:title="@string/my_track"
-            android:icon="@drawable/ic_track"/>
+            android:id="@+id/mine_info"
+            android:title="@string/mine_info"
+            android:icon="@drawable/ic_mine_info"
+            />
     </group>
 
     <group
         android:id="@+id/group5">
         <item
-            android:id="@+id/my_contribution"
-            android:icon="@drawable/ic_cap"
-            android:title="@string/my_contribution" />
+            android:id="@+id/setting"
+            android:title="@string/string_setting"
+            android:icon="@drawable/ic_setting"
+            />
     </group>
-    <group
-        android:id="@+id/group6">
-        <item
-            android:id="@+id/back_login"
-            android:icon="@drawable/ic_back"
-            android:title="@string/back_login" />
-    </group>
-
 </menu>

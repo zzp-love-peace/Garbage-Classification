@@ -28,6 +28,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rubbish">
         <activity
+            android:name=".activities.ArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.LoginByPwdActivity"
             android:exported="false" />
         <activity
@@ -48,7 +57,7 @@
             android:value="4DEBZ-NRHKS-TLWOC-624KZ-DF5IJ-S4BF4" />
 
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".activities.LoginByCodeActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity

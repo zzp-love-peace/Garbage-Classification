@@ -1,23 +1,19 @@
 package com.zzp.rubbish.activities
 
-import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.button.MaterialButton
-import com.hanks.htextview.scale.ScaleText
 import com.hanks.htextview.scale.ScaleTextView
 import com.hanks.htextview.typer.TyperTextView
 import com.zzp.rubbish.R
 import com.zzp.rubbish.saveData
 import com.zzp.rubbish.showToast
-import com.zzp.rubbish.transparencyBar
-import com.zzp.rubbish.util.UserInfo
+import com.zzp.rubbish.data.UserInfo
 
 class QuestionActivity : AppCompatActivity() {
 

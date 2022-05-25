@@ -48,7 +48,8 @@ class CalendarActivity : AppCompatActivity() {
     private var initiated = false
     private var taskAdapter = TaskAdapter()
 
-    @DelicateCoroutinesApi
+
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)

@@ -1,7 +1,6 @@
 package com.zzp.rubbish.fragments
 
 import android.Manifest
-import android.R.attr
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -34,7 +33,7 @@ import com.zzp.rubbish.compressImage
 import com.zzp.rubbish.network.NetWork
 import com.zzp.rubbish.network.TencentFileManager
 import com.zzp.rubbish.showToast
-import com.zzp.rubbish.util.UserInfo
+import com.zzp.rubbish.data.UserInfo
 import kotlinx.coroutines.*
 import java.io.File
 import java.util.*
@@ -97,7 +96,8 @@ class DiscernFragment : Fragment() {
 
     }
 
-    @DelicateCoroutinesApi
+
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         when (requestCode) {
@@ -109,7 +109,8 @@ class DiscernFragment : Fragment() {
                             requireActivity().contentResolver.openInputStream(it)
                         )
                         rubbishImage = bitmap
-                        TencentFileManager.uploadImage(UserInfo.phoneNumber,
+                        TencentFileManager.uploadImage(
+                            UserInfo.phoneNumber,
                             bitmapToByteArray(compressImage(bitmap, 450.0f)),
                             object : CosXmlResultListener {
                                 override fun onSuccess(
@@ -141,7 +142,8 @@ class DiscernFragment : Fragment() {
                     data.data?.let {
                         val bitmap = getBitmapFromUri(it)
                         rubbishImage = bitmap
-                        TencentFileManager.uploadImage(UserInfo.phoneNumber,
+                        TencentFileManager.uploadImage(
+                            UserInfo.phoneNumber,
                             bitmapToByteArray(compressImage(bitmap!!, 450.0f)),
                             object : CosXmlResultListener {
                                 override fun onSuccess(

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -115,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="6595"
+                android:text="0"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/textview1"
@@ -123,11 +121,11 @@
                 app:layout_constraintStart_toStartOf="@+id/textview1" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textview5"
+                android:id="@+id/recovery_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="156"
+                android:text="0"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/textview2"
@@ -135,11 +133,11 @@
                 app:layout_constraintStart_toStartOf="@+id/textview2" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textview6"
+                android:id="@+id/exchange_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="564"
+                android:text="0"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/textview3"
@@ -200,13 +198,11 @@
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"
             android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="24dp"
+            android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingBottom="3dp"
-            app:elevation="2dp"
+            app:elevation="0dp"
             app:itemIconTint="@color/orange"
             app:menu="@menu/mine_nav_menu" />
     </com.google.android.material.card.MaterialCardView>

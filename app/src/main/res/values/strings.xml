@@ -8,10 +8,12 @@
     <string name="prev_question">上一题</string>
     <string name="string_score">积分</string>
     <string name="string_zero">0</string>
-    <string name="login_register_by_phone">手机号码登录</string>
+    <string name="login_by_phone">手机号码登录</string>
     <string name="string1">绿水青山就是金山银山</string>
     <string name="input_phone_num">请输入手机号码</string>
     <string name="input_code">请输入验证码</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_pwd_again">请再次输入密码</string>
     <string name="login">登录</string>
     <string name="another_login_way">其他登录方式</string>
     <string name="string2">登录即代表同意 用户协议 和 隐私政策</string>
@@ -43,4 +45,12 @@
     <string name="string8">分类知识答题</string>
     <string name="string9">该出手时就出，该分类时就分类</string>
     <string name="change_username">修改昵称</string>
+    <string name="login_by_pwd">账号密码登录</string>
+    <string name="register_of_login">还没有账号？立即注册</string>
+    <string name="mine_info">个人信息</string>
+    <string name="back_to_login">已有账号了？返回登录</string>
+    <string name="register_account">账号注册</string>
+    <string name="about_us">关于我们</string>
+    <string name="register">注册</string>
+    <string name="string_collect">收藏</string>
 </resources>
